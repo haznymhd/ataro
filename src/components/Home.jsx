@@ -1,59 +1,49 @@
 import React from "react";
-import Lottie from "react-lottie";
-import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const Home = () => {
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    path: "/Animation - 1731771313486.json", // Path to the JSON file in the public folder
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
-
   return (
-    <div className="min-h-screen bg-black p-4 flex flex-col items-center justify-center text-center text-white">
-
-      {/* Main Heading */}
-      <h1 className="text-3xl md:text-6xl lg:text-8xl font-bold">COMING SOON</h1>
-
-      {/* Subheading */}
-      <p className="mb-4 text-lg md:text-xl text-white">
-        We’re currently working on creating something fantastic. <br />
-        We’ll be here soon.
-      </p>
-      {/* Lottie Animation */}
-      <div className="w-64 md:w-96 mb-[-40px]">
-        <Lottie options={defaultOptions} />
+    <div className="min-h-screen bg-gray-200 flex flex-col items-center justify-center relative">
+      {/* Header with Logo */}
+      <header className="absolute top-4 left-4">
+        <img src="valkoware1.png" alt="ValkoWare Logo" className="w-40 ml-5 mt-5" />
+      </header>
+      
+      {/* Left-side Rotated Intro Logo */}
+      <div className="absolute right-[-40px] top-1/2 transform -translate-y-[300px] -rotate-90">
+        <img 
+          src="intro_logo.png" 
+          alt="Introducing Logo" 
+          className="w-40" 
+        />
+      </div>
+      
+      {/* Centered Background Logo with Opacity */}
+      <div className="absolute inset-0 flex items-center justify-center">
+        <img 
+          src="valkoware.png" 
+          alt="ValkoWare Logo" 
+          className="w-[200%] opacity-[35%] md:mb-[-300px] mb-[-200px] " 
+        />
+      </div>
+      
+      {/* Centered Image Responsive */}
+      <div className="flex flex-col items-center justify-center z-10 w-full">
+        <img 
+          src="Mobile Smartphone Mockup 03.png" 
+          alt="Mobile smartphone mockup" 
+          className="w-[80%] h-auto max-w-none md:w-[70%] lg:w-[30%]" 
+        />
+        
+        {/* Contact Information */}
+{/*         <p className="mt-4 md:mb-[-80px] text-gray-700 text-sm md:text-base font-medium text-center">
+          Point of Sale (POS) Systems | Software Development | SEO Optimization | Cloud Deployment | UI/UX Design
+        </p> */}
       </div>
 
-      {/* Footer */}
-      <p className="mt-8 text-sm text-white">
-        You can connect with us for more details.
-      </p>
-
-      {/* Social Links */}
-      <div className="mt-12 flex items-center justify-center space-x-8">
-        {/* Facebook */}
-        <a
-          href="https://www.facebook.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-white hover:text-gray-300 transition-colors duration-200"
-        >
-          <i className="fab fa-facebook-f text-4xl"></i>
-        </a>
-        {/* Instagram */}
-        <a
-          href="https://www.instagram.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-white hover:text-gray-300 transition-colors duration-200"
-        >
-          <i className="fab fa-instagram text-4xl"></i>
-        </a>
-      </div>
+      {/* Footer with Services */}
+      <footer className="absolute md:bottom-4 bottom-[100px] text-center text-gray-600 text-sm ">
+      Point of Sale (POS) Systems | Software Development | SEO Optimization | Cloud Deployment | UI/UX Design <br /><br />info@valkoware.com | +94 71 777 7668 
+      </footer>
     </div>
   );
 };

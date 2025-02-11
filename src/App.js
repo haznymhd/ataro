@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Header from "./components/Header";
-import Footer from "./components/Footer"; // Import the Footer component
+/* import Header from "./components/Header";
+import Footer from "./components/Footer"; // Import the Footer component */
 import Home from "./components/Home";
 
 // Placeholder components for routes
@@ -12,7 +12,7 @@ function App() {
   return (
     <Router>
       {/* Header */}
-      <Header />
+      {/* <Header /> */}
 
       {/* Routes */}
       <div className="flex-grow">
@@ -26,7 +26,7 @@ function App() {
       </div>
 
       {/* Footer */}
-      <Footer />
+   {/*    <Footer /> */}
     </Router>
   );
 }
