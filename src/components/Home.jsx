@@ -41,9 +41,9 @@ const Home = () => {
       </div>
 
 
-      <footer className="absolute md:bottom-4 bottom-[100px] text-center text-gray-600 text-sm ">
+{/*       <footer className="absolute md:bottom-4 bottom-[100px] text-center text-gray-600 text-sm ">
       Point of Sale (POS) Systems | Software Development | SEO Optimization | Cloud Deployment | UI/UX Design <br /><br />info@valkoware.com | +94 71 777 7668 
-      </footer>
+      </footer> */}
     </div>
   );
 };
